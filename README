@@ -1,0 +1,76 @@
+## Practical 3 - Networking ##
+In this practical the author writes a simple Java Web Server which can respond to some HTTP/1.1[1] requests.
+
+  #Basic Requirements accomplished:
+   - The main method for the server takes in two command line arguments, i.e. the directory from which the server serves documentsto clients
+   and the port on which the server should listen.
+   - This implementation supports and responds to both HEAD and GET requests.
+   - For all cases the server is able to return HTML documents requested by the client, but in case of non existent services or resources, the server
+   responds with error messages accordingly.
+
+   # Enhancements accomplished in this practicals:
+   - This program supports the returning of binary images such as GIF, JPEG, PNG.
+
+   - Multithreading to support multiple concurrent client connection requests upto a specific limit has been implemented.
+   the thread is started when the server starts, using the ConnectionHandler created for the same.
+
+   - Logging - It was ensured that every possible detail such as the requests made, indicating date/time, request type, response code, etc are
+   logged into the log file. A Logger class specifically available in java for the same purpose was used accordingly. All messages, requests, responses,
+   warnings and severe messages are the log types displayed.
+
+   - Along with supporting request methods for Head and GET, the author has also implemented another method for the DELETE mime. Also if the
+   file is deleted, an information message is logged into the file accordingly.
+
+
+  # Getting Started #
+    The following instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+    Prerequisites:
+    A good knowledge on Java and networking concepts will help you to understand this project's aims and its concepts.
+
+    Compiling and Running:
+    In order for the program to be compatible with the automated checker that we have used
+
+    - It must be possible to compile all your source code from within the src directory using the simple command
+        javac *.java
+
+    - It must be possible to get your program to serve pages from a directory and port specified on the command line
+      that are passed to your main method in the String[] args.
+        java WebServerMain ../www 12345
+
+    - If your server is started without supplying the command line arguments, the following usage message is printed.
+        java WebServerMain
+        Usage: java WebServerMain <document_root> <port>
+
+    Running the Automated Checker:
+    In order to perform the basic tests, the tests given by the university has been used.
+        stacscheck /cs/studres/CS5001/Practicals/p3-networking/Tests.
+
+    Test and Debug:
+    In order to test your web server program manually, you can use the following address on any browser.
+        http://localhost:12345/index.html
+
+    To use simple client programs to send simple request to your server and print out the reply, Curl and Telnet can be used.
+    following are the ways in which you can test different request types.
+
+    - HEAD
+        curl -s -I -X HEAD localhost:12345/index.html
+        If the file exists in the server, "200 OK" is returned.
+        If the file does not exist in the server "404 Not Found" is returned.
+
+    - GET
+        curl -s -I -X GET localhost:12345/index.html
+        If the file exists in the server, the requested file will be displayed to the user in its specific format such as gif, jpg, png etc.
+        If it does not exist "404 Not Found" is returned to the user through the browser.
+
+    -DELETE
+        curl -s -I -X DELETE localhost:12345/index.html
+        If the file is deleted, "200 OK" is returned to the user.
+        If it is not deleted, "404 Not Found" is returned considering the option that the file does not even exist.
+
+## Acknowledgement
+
+ the author would like to thank the professors for explaining concepts in a simpler way so that we can understand and also for providing us with the relevant
+ resources such as lecture notes and example classes that helped the author to start off with this practical.
+
+ ******************************************************************************************************************************************************

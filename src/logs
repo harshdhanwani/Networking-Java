@@ -1,0 +1,14 @@
+Nov 10, 2017 5:31:26 PM LoggingFile loggingMessage
+INFO:  Server has started ... listening on port 12345 ....
+Nov 10, 2017 5:31:27 PM LoggingFile loggingMessage
+INFO:  Server got new connection request from /0:0:0:0:0:0:0:1
+Nov 10, 2017 5:31:27 PM LoggingFile loggingMessage
+INFO: new ConnectionHandler thread started ....
+Nov 10, 2017 5:31:27 PM LoggingFile loggingRequest
+INFO: Receiving request SLURP from the address /0:0:0:0:0:0:0:1
+Nov 10, 2017 5:31:27 PM LoggingFile loggingMessage
+INFO: File Name: SLURP is not recognised by the server!
+Nov 10, 2017 5:31:27 PM LoggingFile loggingRespond
+INFO: Responding response  501 Not Implemented to address /0:0:0:0:0:0:0:1
+Nov 10, 2017 5:31:27 PM LoggingFile loggingMessage
+INFO: ConnectionHandler: .. cleaning up and exiting ... 

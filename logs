@@ -1,0 +1,44 @@
+Apr 03, 2018 5:24:45 PM LoggingFile loggingMessage
+INFO:  Server has started ... listening on port 12345 ....
+Apr 03, 2018 5:25:15 PM LoggingFile loggingMessage
+INFO:  Server got new connection request from /0:0:0:0:0:0:0:1
+Apr 03, 2018 5:25:15 PM LoggingFile loggingMessage
+INFO:  Server got new connection request from /0:0:0:0:0:0:0:1
+Apr 03, 2018 5:25:15 PM LoggingFile loggingMessage
+INFO: new ConnectionHandler thread started ....
+Apr 03, 2018 5:25:15 PM LoggingFile loggingMessage
+INFO: new ConnectionHandler thread started ....
+Apr 03, 2018 5:25:15 PM LoggingFile loggingRequest
+INFO: Receiving request GET from the address /0:0:0:0:0:0:0:1
+Apr 03, 2018 5:25:15 PM LoggingFile loggingRespond
+INFO: Responding response 404 Not Found to address /0:0:0:0:0:0:0:1
+Apr 03, 2018 5:25:15 PM LoggingFile loggingMessage
+INFO: ConnectionHandler: .. cleaning up and exiting ... 
+Apr 03, 2018 5:25:15 PM LoggingFile loggingRequest
+INFO: Receiving request GET from the address /0:0:0:0:0:0:0:1
+Apr 03, 2018 5:25:15 PM LoggingFile loggingRespond
+INFO: Responding response 404 Not Found to address /0:0:0:0:0:0:0:1
+Apr 03, 2018 5:25:15 PM LoggingFile loggingMessage
+INFO: ConnectionHandler: .. cleaning up and exiting ... 
+Apr 03, 2018 5:25:54 PM LoggingFile loggingMessage
+INFO:  Server got new connection request from /0:0:0:0:0:0:0:1
+Apr 03, 2018 5:25:54 PM LoggingFile loggingMessage
+INFO:  Server got new connection request from /0:0:0:0:0:0:0:1
+Apr 03, 2018 5:25:54 PM LoggingFile loggingMessage
+INFO: new ConnectionHandler thread started ....
+Apr 03, 2018 5:25:54 PM LoggingFile loggingMessage
+INFO:  Server got new connection request from /0:0:0:0:0:0:0:1
+Apr 03, 2018 5:25:54 PM LoggingFile loggingMessage
+INFO: new ConnectionHandler thread started ....
+Apr 03, 2018 5:25:54 PM LoggingFile loggingMessage
+INFO:  Server got new connection request from /0:0:0:0:0:0:0:1
+Apr 03, 2018 5:25:54 PM LoggingFile loggingRequest
+INFO: Receiving request GET from the address /0:0:0:0:0:0:0:1
+Apr 03, 2018 5:25:54 PM LoggingFile loggingMessage
+INFO: new ConnectionHandler thread started ....
+Apr 03, 2018 5:25:54 PM LoggingFile loggingRespond
+INFO: Responding response 404 Not Found to address /0:0:0:0:0:0:0:1
+Apr 03, 2018 5:25:54 PM LoggingFile loggingMessage
+INFO: new ConnectionHandler thread started ....
+Apr 03, 2018 5:25:54 PM LoggingFile loggingMessage
+INFO: ConnectionHandler: .. cleaning up and exiting ... 
